@@ -1,17 +1,23 @@
 from flask import Flask, render_template
+
 app = Flask(__name__)
-# Route for the home page (index.html)
+
+# Route for the home page (home.html)
 @app.route('/')
-def index():
-    return render_template('index.html')
-# Route for the login/signup page
+def home():
+    return render_template('home.html')
+
+# Route for the login/signup page (login_signup.html)
 @app.route('/login_signup')
 def login_signup():
     return render_template('login_signup.html')
-# Route for the "Dear Loved One" page
-@app.route('/dear_loved_one')
-def dear_loved_one():
-    return render_template('dear_loved_one.html')
+
+# Route for the "Dear Loved One" page (journal.html)
+@app.route('/journal')
+def journal():
+    return render_template('journal.html')
+
 # Add more routes as needed
+
 if __name__ == '__main__':
-    app.run(host = '0.0.0.0', port = 8080, debug = True)
+    app.run(host='0.0.0.0', port=8080, debug=True)
