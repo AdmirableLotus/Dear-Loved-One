@@ -1,0 +1,70 @@
+<!-- dear_loved_one.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Legacy - Create Heartfelt Letters and Notes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            background-image: url('{{ url_for('static', filename='background.jpg') }}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white; /* Set text color to white */
+        }
+
+        #legacy-message, #services, #about-us {
+            color: white; /* Set text color to white */
+        }
+
+        /* Add more specific styling as needed */
+
+    </style>
+</head>
+
+<body>
+    <div id="legacy-message">
+        <h1>Preserve Your Legacy</h1>
+        <p>Create heartfelt letters and notes for your loved ones to cherish long after you're gone.</p>
+    </div>
+
+    <!-- Add a link to login_signup.html -->
+    <a href="{{ url_for('login_signup') }}">
+        <button id="start-now-button">Start Now</button>
+    </a>
+
+    <p id="lotus-description">
+        <em>Introducing Lotus, a unique journal designed to help individuals create heartfelt letters and notes for
+            their loved ones before they pass away. Located in Omaha, NE, Lotus offers a meaningful way to express
+            emotions and leave a lasting legacy. With Lotus, users can set up the date of release for their journal,
+            ensuring their messages reach their loved ones at the right time. Discover the power of connection and leave
+            a lasting impression with Lotus.</em>
+    </p>
+
+    <div id="services">
+        <h2>Services</h2>
+        <p><strong>Personalized Legacy Letters</strong></p>
+        <p>Create heartfelt letters and messages for your loved ones, to be delivered after you are gone.</p>
+
+        <!-- Add more services as needed -->
+
+    </div>
+
+    <div id="about-us">
+        <div id="about-us-text">
+            <h2>About Us</h2>
+            <p>Lotus is a unique journal based in Omaha, NE, designed to help individuals create heartfelt letters and
+                notes for their loved ones before their passing. Our platform allows users to set up the date of release
+                of the journal, ensuring that their messages reach their loved ones at the right time.</p>
+            <p>At Lotus, we understand the importance of leaving a lasting legacy and expressing one's deepest emotions.
+                Our mission is to provide a safe and meaningful space for individuals to preserve their thoughts,
+                memories, and messages of love, ensuring that their words continue to inspire and bring comfort to their
+                loved ones even after they are gone.</p>
+        </div>
+    </div>
+</body>
+
+</html>
